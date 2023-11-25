@@ -1,0 +1,91 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 10px; /* Adjust the padding value as needed */
+    text-align: center;
+    justify-content: space-between;
+}
+
+.navbar ul {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px; /* Fix the syntax error here */
+    padding: 0;
+}
+
+.navbar li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #3498db;
+}
+
+section {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.login-section {
+    border: 2px solid #3498db;
+}
+
+.signup-section {
+    border: 2px solid #2ecc71;
+}
+
+.description-section {
+    border: 2px solid #e74c3c;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}

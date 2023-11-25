@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" herf = "index.css" />
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#login">Login</a></li>
+                <li><a href="#signup">Signup</a></li>
+                <li><a href="#description">Description</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+        <section class="login-section" id="login">
+            <h2>Login</h2>
+            <form method="POST" action="{{ url_for('login') }}">
+                <input type="text" name="username-input" placeholder="Username">
+                <input type="password" name="password-input" placeholder="Password">
+                <button type="submit">submit</button>
+            </form>
+            
+            {% if login %}
+                <p>Welcome! You are logged in successfully.</p>
+            {% else %}  
+                <p>Login failed. Please check your credentials and try again.</p>
+            {% endif %}
+        </section>
+
+        <section class="signup-section" id="signup">
+            <h2>Sign Up</h2>
+            <input type="text" name="username-input" placeholder="Username">
+            <input type="password" name="password-input" placeholder="Password">
+            <button type="submit">submit</button>
+        </section>
+
+        <section class="description-section" id="description">
+            <h2>Website Description</h2>
+            <p>This is a fantastic website that does amazing things.</p>
+        </section>
+    </div>
+</body>
+</html>
